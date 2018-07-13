@@ -6,7 +6,6 @@
 #include <algorithm>
 #include <stack>
 using namespace std;
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 struct Edge{
 	int to,next;
 };
@@ -68,7 +67,7 @@ void tarjan(int v){
 		scc[v]=v;
 	}
 }
-int main(int argc, char** argv) {
+int main() {
 	init();
 	while(!q.empty()) q.pop();
 	for(int i=1;i<=n;i++){
